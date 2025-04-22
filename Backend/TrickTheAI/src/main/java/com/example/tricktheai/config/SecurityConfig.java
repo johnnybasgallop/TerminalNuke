@@ -28,7 +28,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:3000", "https://terminal-nuke-laq9cl95c-johns-projects-74806247.vercel.app/")); //local dev
+        config.setAllowedOrigins(List.of("http://localhost:3000", "https://terminal-nuke-laq9cl95c-johns-projects-74806247.vercel.app")); //local dev
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true); // optional if you're using cookies/auth
