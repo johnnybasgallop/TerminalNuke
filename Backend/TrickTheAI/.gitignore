@@ -37,3 +37,8 @@ build/
 src/main/resources/application.yaml
 .yaml
 *.yaml
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

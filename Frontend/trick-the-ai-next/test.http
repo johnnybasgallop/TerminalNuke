@@ -1,5 +1,5 @@
 ### Start a new game session
-POST https://rent-hu-kitchen-logos.trycloudflare.com/game/start
+POST http://terminal-nuke-api-env.eba-qmgvmajd.eu-west-2.elasticbeanstalk.com/game/start
 Content-Type: application/json
 
 {}
