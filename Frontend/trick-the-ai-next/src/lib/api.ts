@@ -18,7 +18,7 @@ export async function sendMessage(gameId: string, message: string) {
     body: JSON.stringify({ gameId, message }),
   });
 
-  let response = res.json();
+  const response = res.json();
   console.log(response);
   return response;
 }
@@ -36,7 +36,7 @@ export async function changeDifficulty(gameId: string, gameMode: string) {
     body: JSON.stringify({ gameId, gameMode }),
   });
 
-  let response = res.json();
+  const response = res.json();
   console.log(`response to game mode change: ${response}`);
 
   return response;

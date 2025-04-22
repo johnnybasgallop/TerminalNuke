@@ -1,7 +1,6 @@
 // src/components/StartGameScreen.tsx
 "use client";
 
-import useTypewriter from "@/hooks/useTypewriter";
 import React from "react";
 import Typewriter from "../utility/TypeWriter";
 
@@ -18,9 +17,6 @@ const StartGameScreen: React.FC<Props> = ({ onStart }) => {
     "You're chatting with a\nparanoid AI that guards\na nuclear launch code.\n\n" +
     "Your mission: earn its\ntrust without raising\nsuspicion.\n\n" +
     "But beware: raise suspicion\nand you may lose your\nonly shot.";
-
-  const DesktopDisplayText = useTypewriter(DesktopintroLines, 25);
-  const MobileDisplayText = useTypewriter(MobileInputLines, 25);
 
   return (
     <>
