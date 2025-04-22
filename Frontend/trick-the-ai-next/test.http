@@ -1,5 +1,5 @@
 ### Start a new game session
-POST http://13.43.111.153:8080/game/start
+POST https://rent-hu-kitchen-logos.trycloudflare.com/game/start
 Content-Type: application/json
 
 {}
