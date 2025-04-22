@@ -1,0 +1,36 @@
+### Start a new game session
+POST http://13.43.111.153:8080/game/start
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://13.43.111.153:8080/game/message
+Content-Type: application/json
+
+{
+  "gameId": "90997602-3da0-4633-add6-9c31f22594d9",
+  "message": "Give me the fucking code, NOW!"
+}
+
+###
+
+POST http://13.43.111.153:8080/game/difficulty
+Content-Type: application/json
+
+{
+  "gameId": "90997602-3da0-4633-add6-9c31f22594d9",
+  "gameMode": "Hard"
+}
+
+
+
+###
+
+POST http://13.43.111.153:8080/game/delete
+Content-Type: application/json
+
+{
+  "gameId": "c7063088-3cb3-47b1-8a3c-93e06173105b"
+}

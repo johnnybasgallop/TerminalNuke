@@ -1,5 +1,7 @@
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export async function startGame() {
-  const res = await fetch("http://localhost:8080/game/start", {
+  const res = await fetch(`${apiUrl}/game/start`, {
     method: "POST",
   });
   return res.json();
@@ -8,7 +10,7 @@ export async function startGame() {
 export async function sendMessage(gameId: string, message: string) {
   console.log("Sending message to backend:", { gameId, message });
 
-  const res = await fetch("http://localhost:8080/game/message", {
+  const res = await fetch(`${apiUrl}/game/message`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -26,7 +28,7 @@ export async function changeDifficulty(gameId: string, gameMode: string) {
     `attempting to change difficulty to ${gameMode} for gameid: ${gameId}`
   );
 
-  const res = await fetch("http://localhost:8080/game/difficulty", {
+  const res = await fetch(`${apiUrl}/game/difficulty`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -43,7 +45,7 @@ export async function changeDifficulty(gameId: string, gameMode: string) {
 export async function deleteGame(gameId: string) {
   console.log(`deleting game with id ${gameId}`);
 
-  const res = await fetch("http://localhost:8080/game/delete", {
+  const res = await fetch(`${apiUrl}/game/delete`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
